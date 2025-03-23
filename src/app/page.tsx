@@ -34,7 +34,7 @@ export default function Home() {
     formData.append('location', location);
 
     try {
-      const response = await axios.post<ApiResponse>('https://referralautomation-production.up.railway.app/analyze', formData, {
+      const response = await axios.post<ApiResponse>("https://natural-maryellen-job-matcher-finder-b6ea5ea7.koyeb.app/analyze", formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setJobs(response.data.jobs || []);
